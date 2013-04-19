@@ -1,0 +1,12 @@
+{
+    "headerVersion": 1,
+    "pluginVersion": "1.0",
+    "builderMinVersion": "2.0.1",
+    "builderMaxVersion": "2.0.*",
+    "identifier": "sausageBuilder",
+    "name": "Sausage Builder",
+    "description": "Provides a custom Exporter for Sausage PHP",
+    "load": [
+        "php_sausage.js"
+    ]
+}

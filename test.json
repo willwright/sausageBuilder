@@ -1,0 +1,37 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "https://www.solesociety.com/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='newsletterPopupContainer']//div[.='X']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "search"
+      },
+      "text": "addy"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='form-search']/button"
+      }
+    },
+    {
+      "type": "assertTextPresent",
+      "text": "SEARCH RESULTS FOR 'ADDY'"
+    }
+  ]
+}
