@@ -60,7 +60,7 @@ builder.selenium2.io.addLangFormatter({
         "id": "\"id\"",
         "link text": "\"link text\"",
         "xpath": "\"xpath\"",
-        "css selector": "\"css\"",
+        "css selector": "\"css selector\"",
         "name": "\"name\""}[locatorType];
   },
   assert: function(step, escapeValue, doSubs, getter) {
@@ -140,7 +140,7 @@ builder.selenium2.io.addLangFormatter({
       vartype: ""
     },
     "Text": {
-      getter: "$this->element($this->using({locatorBy})->value({locator}))->text",
+      getter: "$this->element($this->using({locatorBy})->value({locator}))->text()",
       cmp: "{text}",
       vartype: ""
     },
